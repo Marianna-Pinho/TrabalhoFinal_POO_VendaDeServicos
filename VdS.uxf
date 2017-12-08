@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>64</y>
+      <w>328</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Servico
+--
+- nomeServ : String
+- descricao : String
+- preco : float
+- usuarios : List&lt;Usuario*&gt;
+--
++ alterarPreco(novoPreco : float) : void
++ adicionarUsuario(usuario : Usuario) : void
++ removerUsuario(nome : String) : void
+--
++ construtor(nomeServ, descricao, preco)
++ get nomeServ, descricao, preco
++ get usuarios
++ toString
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>464</x>
+      <y>64</y>
+      <w>392</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Usuario
+--
+- nome: String
+- senha: String
+- saldo: float
+- servicos: List&lt;Servico*&gt;
+--
++ depositar(valor: float): void
++ sacar(valor: float): void
++ adicionarServico(servico: Servico) : void
++ removerMeuServico(nomeserv : String) : void
++ qtdServicos() : int
++ verMeusServicos() : String
++ contratarServico(servico : Servico, nomeContratado: String) : void
++ DeletarConta() 
+--
++ construtor(nome, senha, saldo)
++ get nome, senha, saldo
++ toString
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>384</y>
+      <w>440</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>VendaDeServicos
+--
+- r_usuarios : Repository &lt;Usuario&gt; 
+- r_servicos : Repository &lt;Servico&gt; 
+
+--
++  CadastrarUsuario(nome: String, senha: String, saldo : float) : void
++  Login(nome: String, senha: String) : void
++  Logout() : void
++  CadastrarServico(nomeServ: String, descricao: String, preco: float) : void
++  DeletarConta() : void
++  MostrarTodosServicos() : void
++  MostrarUsuariosComServico() : void
++  ProcurarServicoNome(nomeServ: String) : void
++ VerPerfil (nome : String) : void
+bg=yellow</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
