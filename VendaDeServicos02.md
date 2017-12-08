@@ -3,7 +3,7 @@ layout: post
 title:  "Venda de Serviços"
 category: 'Trabalho Final'
 description: 'Pessoas podem oferecer e contratar serviços'
-image: 'TrabalhoFinal_POO_VendaDeServicos/agoravai.png'
+image: 'agoravai.png'
 ---
 
 - Usuários podem ser cadastrados no sistema e devem possuir Nome, Senha e um Saldo Inicial.
@@ -118,5 +118,5 @@ Sacar 400
 
 ## Diagrama de Classes
 
-![](TrabalhoFinal_POO_VendaDeServicos/agoravai.png)
+![](agoravai.png)
 
