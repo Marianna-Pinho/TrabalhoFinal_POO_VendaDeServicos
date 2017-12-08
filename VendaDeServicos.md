@@ -1,14 +1,9 @@
 ---
 layout: post
-title:  "Whatsapp II"
-category: 'Jedi'
-introduction: Chats pessoa a pessoa e Grupos.
-description: 
+title:  "Venda de Servicos"
+category: 'Trabalho Final'
+description: Central de Contratação e Oferecimento de Serviços
 image: 'TrabalhoFinal_POO_VendaDeServicos/agoravai.png'
-tags:
-- nxn
-- repositórios
----
 
 - Usuários podem ser cadastrados no sistema e devem possuir Nome, Senha e um Saldo Inicial.
     - O nome do usuário deve ser único no sistema. 
