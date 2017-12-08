@@ -80,13 +80,7 @@ public:
             usuario_aux = nullptr;      //Usuario apagou propria conta
             menu = HELP_SYS;
                 return "Usuario Removido";
-        }/*else if(cmd == "RemoverServico"){
-            checkLogin(usuario_aux);
-            servico_aux2 = r_servicos.get(ui[1]);  //ui[1]: tipo
-            servico_aux2->removerTodosUsuarios();   //remove todos os usuarios do servico e o servico de todos os usuarios
-            r_servicos.rm(ui[1]);
-            return "Servico Removido!";
-        }*/else if(cmd == "MostrarTodosServicos"){
+        }else if(cmd == "MostrarTodosServicos"){
             checkLogin(usuario_aux);
             auto vetor = r_servicos.values(); //recebe todos os servicos
             for(auto servico : vetor){
