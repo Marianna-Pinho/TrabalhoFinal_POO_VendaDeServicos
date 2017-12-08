@@ -43,8 +43,23 @@ DeletarConta
 ```
 AdicionarServico professora
   Servico Adicionado!
+AdicionarServico cantora
+  Servico Adicionado!
 AdicionarServico piloto
   Servico Adicionado!
+```
+- Usuários podem ver todos os seus serviços.
+```
+VerMeusServicos
+  Tipo: professora
+  Preco: 10
+  Descricao: ingles
+  [ ana  ]
+  
+  Tipo: cantora
+  Preco: 100
+  Descricao: pop
+  [ ana  ]
 ```
 -   Usuários podem deixar de oferecer um serviço, removendo-o.
 ```
@@ -89,19 +104,6 @@ VerPerfil leo
    
 VerPerfil ana
    Nome: ana
-```
-- Usuários podem ver todos os seus serviços.
-```
-VerMeusServicos
-  Tipo: professora
-  Preco: 10
-  Descricao: ingles
-  [ ana  ]
-  
-  Tipo: cantora
-  Preco: 100
-  Descricao: pop
-  [ ana  ]
 ```
 - Usuários podem contratar o serviço de outro usuário.
     - O usuário deve pagar pelo serviço contratado, portanto, deve ter saldo suficiente.
